@@ -37,6 +37,25 @@ FALSE POSITIVE       0.97      0.99      0.98       353
 
 ![](img/svc.png)
 
+* Neural Network (Tensorflow)
+
+```
+                precision    recall  f1-score   support
+
+           0       0.77      0.78      0.77       177
+           1       0.79      0.73      0.76       179
+           2       0.97      1.00      0.98       344
+
+    accuracy                           0.87       700
+   macro avg       0.84      0.84      0.84       700
+weighted avg       0.87      0.87      0.87       700
+
+```
+
+![](img/ann.png)
+
 ## Conclusion
 RandomForest performance is slightly better than SVC.  However, its model size of RandomForest is 50MB while SVC model size is about 1MB.  RamdomForest takes a lot more computation power and storage size for its model.   
+ANN model shows similar performance as RamdomForest and SVC.  
+
 
