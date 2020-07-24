@@ -6,7 +6,8 @@ To help process this data, create machine learning models capable of classifying
 
 ## Two different classifications are used.
 
-* RandomForest
+- RandomForest
+
 ```
 
                 precision    recall  f1-score   support
@@ -19,9 +20,11 @@ FALSE POSITIVE       0.95      1.00      0.97       353
      macro avg       0.87      0.85      0.86       700
   weighted avg       0.89      0.89      0.89       700
 ```
+
 ![](img/randomforest.png)
 
-* SVC
+- SVC
+
 ```
 
                precision    recall  f1-score   support
@@ -37,25 +40,24 @@ FALSE POSITIVE       0.97      0.99      0.98       353
 
 ![](img/svc.png)
 
-* Neural Network (Tensorflow)
+- Neural Network (Tensorflow)
 
 ```
-                precision    recall  f1-score   support
+               precision    recall  f1-score   support
 
-           0       0.77      0.78      0.77       177
-           1       0.79      0.73      0.76       179
-           2       0.97      1.00      0.98       344
+           0       0.83      0.78      0.81       509
+           1       0.82      0.84      0.83       537
+           2       0.98      1.00      0.99      1052
 
-    accuracy                           0.87       700
-   macro avg       0.84      0.84      0.84       700
-weighted avg       0.87      0.87      0.87       700
+    accuracy                           0.90      2098
+   macro avg       0.88      0.87      0.87      2098
+weighted avg       0.90      0.90      0.90      2098
 
 ```
 
 ![](img/ann.png)
 
 ## Conclusion
-RandomForest performance is slightly better than SVC.  However, its model size of RandomForest is 50MB while SVC model size is about 1MB.  RamdomForest takes a lot more computation power and storage size for its model.   
-ANN model shows similar performance as RamdomForest and SVC.  
 
-
+RandomForest performance is slightly better than SVC. However, its model size of RandomForest is 50MB while SVC model size is about 1MB. RamdomForest takes a lot more computation power and storage size for its model.  
+ANN model shows better performance than RamdomForest and SVC.
